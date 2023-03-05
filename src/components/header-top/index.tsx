@@ -1,15 +1,18 @@
 import {
   Box,
+  Burger,
   Container,
   createStyles,
   Group,
   Stack,
   Text,
+  useMantineTheme,
 } from "@mantine/core";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/images/hfx_murodov_logo.webp";
 import { IconMail, IconPhone } from "@tabler/icons-react";
+import { useMediaQuery } from "@mantine/hooks";
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -34,7 +37,15 @@ const useStyles = createStyles((theme) => ({
     color: theme.colors.dark[3],
   },
 }));
-export function HeaderTop() {
+
+type HeaderTopProps = {
+  opened: boolean;
+  toggleOpened: () => void;
+};
+
+export function HeaderTop({ opened, toggleOpened }: HeaderTopProps) {
+  const theme = useMantineTheme();
+  const smallerThanSm = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
   const { classes } = useStyles();
   return (
     <Box>
@@ -43,39 +54,43 @@ export function HeaderTop() {
           <Box sx={{ height: "60px" }} component={Link} to="/">
             <img src={logo} alt="site logotype" style={{ height: "100%" }} />
           </Box>
-          <Group>
+          {!smallerThanSm ? (
             <Group>
-              <IconMail size={30} className={classes.contactIcon} />
-              <Stack spacing={2}>
-                <Text component="h4" className={classes.contactLabel}>
-                  Elektron pochta
-                </Text>
-                <Text
-                  component="a"
-                  href="mailto:Sirojiddinmuradov0@gmail.com"
-                  target="_blank"
-                  className={classes.contactValue}
-                >
-                  Sirojiddinmuradov0@gmail.com
-                </Text>
-              </Stack>
+              <Group>
+                <IconMail size={30} className={classes.contactIcon} />
+                <Stack spacing={2}>
+                  <Text component="h4" className={classes.contactLabel}>
+                    Elektron pochta
+                  </Text>
+                  <Text
+                    component="a"
+                    href="mailto:Sirojiddinmuradov0@gmail.com"
+                    target="_blank"
+                    className={classes.contactValue}
+                  >
+                    Sirojiddinmuradov0@gmail.com
+                  </Text>
+                </Stack>
+              </Group>
+              <Group>
+                <IconPhone size={30} className={classes.contactIcon} />
+                <Stack spacing={2}>
+                  <Text component="h4" className={classes.contactLabel}>
+                    Telefon raqam
+                  </Text>
+                  <Text
+                    component="a"
+                    href="tel:+998953331479"
+                    className={classes.contactValue}
+                  >
+                    +998953331479
+                  </Text>
+                </Stack>
+              </Group>
             </Group>
-            <Group>
-              <IconPhone size={30} className={classes.contactIcon} />
-              <Stack spacing={2}>
-                <Text component="h4" className={classes.contactLabel}>
-                  Telefon raqam
-                </Text>
-                <Text
-                  component="a"
-                  href="tel:+998953331479"
-                  className={classes.contactValue}
-                >
-                  +998953331479
-                </Text>
-              </Stack>
-            </Group>
-          </Group>
+          ) : (
+            <Burger opened={opened} onClick={toggleOpened} />
+          )}
         </Group>
       </Container>
     </Box>

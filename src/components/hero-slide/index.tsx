@@ -1,4 +1,13 @@
-import { Box, Button, createStyles, Group, Stack, Text } from "@mantine/core";
+import {
+  Box,
+  Button,
+  createStyles,
+  Group,
+  Stack,
+  Text,
+  useMantineTheme,
+} from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import { useNavigate } from "react-router-dom";
 import { IHeroSlideItem } from "../../layouts/app-hero/items";
 
@@ -51,6 +60,8 @@ type HeroSlideProps = {
 
 export function HeroSlide({ slide, reverse = false }: HeroSlideProps) {
   const navigate = useNavigate();
+  const theme = useMantineTheme();
+  const smallerThanSm = useMediaQuery(`(max-width: ${theme.breakpoints.sm}px)`);
 
   const { classes } = useStyles();
 
@@ -72,9 +83,11 @@ export function HeroSlide({ slide, reverse = false }: HeroSlideProps) {
           <Button onClick={() => navigate(slide.link)}>Batafsil</Button>
         </Group>
       </Stack>
-      <Box className={classes.imgWrapper}>
-        <img src={slide.img} alt="slide" className={classes.img} />
-      </Box>
+      {!smallerThanSm ? (
+        <Box className={classes.imgWrapper}>
+          <img src={slide.img} alt="slide" className={classes.img} />
+        </Box>
+      ) : null}
     </Group>
   );
 }

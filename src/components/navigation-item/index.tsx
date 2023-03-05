@@ -24,6 +24,14 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 500,
     fontFamily: "Roboto, sans-serif",
     letterSpacing: "-0.5px",
+
+    [`@media(max-width: ${theme.breakpoints.md}px)`]: {
+      fontSize: "12px",
+    },
+
+    [`@media(max-width: ${theme.breakpoints.sm}px)`]: {
+      fontSize: "14px",
+    },
   },
 }));
 
