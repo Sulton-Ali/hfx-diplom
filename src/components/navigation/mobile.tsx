@@ -86,7 +86,7 @@ export function NavigationMobile({ opened, onClose }: NavigationMobileProps) {
               MMQ va TX
             </Title>
             <Title order={5} sx={{ fontFamily: "Roboto, sans-serif" }}>
-              YO`RIQNOMALAR
+              YO'RIQNOMALAR
             </Title>
           </Stack>
         </Group>
