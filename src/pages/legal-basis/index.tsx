@@ -1,5 +1,6 @@
 import { Box, Container, createStyles, Space, Stack } from "@mantine/core";
 import { Navigate, Route, Routes } from "react-router-dom";
+import { PageTitle } from "../../components/page-title";
 import { LegalBasisActs } from "./components/legal-basis-acts";
 import { LegalBasisInstructions } from "./components/legal-basis-instructions";
 import { LegalBasisLaws } from "./components/legal-basis-laws";
@@ -13,25 +14,18 @@ const useStyles = createStyles((theme) => ({
     paddingTop: 120,
     paddingBottom: 60,
   },
-  title: {
-    ffontFamily: "Roboto, sans-serif",
-    fontSize: "36px",
-    lineHeight: 1.2,
-    textAlign: "center",
-    letterSpacing: "2px",
-  },
 }));
 
-export function LegalBasis() {
+export default function LegalBasis() {
   const { classes } = useStyles();
   return (
     <Box className={classes.root}>
       <Container size="lg">
         <Stack>
-          <h1 className={classes.title}>
+          <PageTitle>
             Mehnatni muhofaza qilishning <br />
             huquqiy asoslari
-          </h1>
+          </PageTitle>
           <LegalBasisList />
           <Space h={60} />
           <Routes>

@@ -1,6 +1,7 @@
 import { Box, Container, createStyles } from "@mantine/core";
 
 import gtlPlatformFull from "../../assets/images/uz_gtl_platform_full.png";
+import { PageTitle } from "../../components/page-title";
 
 const useStyles = createStyles(() => ({
   title: {
@@ -16,7 +17,7 @@ const useStyles = createStyles(() => ({
   },
 }));
 
-export function GtlPlatform() {
+export default function GtlPlatform() {
   const { classes } = useStyles();
   return (
     <Box>
@@ -34,10 +35,10 @@ export function GtlPlatform() {
             paddingBottom: 20,
           }}
         >
-          <h1>
+          <PageTitle>
             Uzbekiston GTL Mehnatni muhofaza qilishga o`qitish va yo‘riqnomadan
             o‘tkazish platformasi haqida
-          </h1>
+          </PageTitle>
         </Box>
       </Container>
     </Box>

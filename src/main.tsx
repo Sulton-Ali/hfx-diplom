@@ -10,7 +10,7 @@ const myTheme: MantineThemeOverride = {
     "*, *::before, *::after": {
       boxSizing: "border-box",
     },
-    "html, body": {
+    "*": {
       fontFamily: "Roboto, sans-serif",
       fontSize: "14px",
       lineHeight: 1.25,

@@ -7,6 +7,7 @@ import {
 } from "@mantine/core";
 
 import gtlFull from "../../assets/images/uz_gtl_full.jpeg";
+import { PageTitle } from "../../components/page-title";
 
 const useStyles = createStyles((theme) => ({
   title: {
@@ -37,7 +38,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export function Gtl() {
+export default function Gtl() {
   const { classes } = useStyles();
   return (
     <Box>
@@ -52,7 +53,7 @@ export function Gtl() {
             paddingBottom: 20,
           }}
         >
-          <h1 className={classes.title}>Uzbekiston GTL</h1>
+          <PageTitle>Uzbekiston GTL</PageTitle>
           <h2 className={classes.h2}>
             Экологик тоза энергоресурслар келажаги сари Ўзбекистоннинг олтин
             йўли

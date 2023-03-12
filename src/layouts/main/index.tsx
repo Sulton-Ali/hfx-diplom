@@ -1,9 +1,12 @@
+import { lazy } from "react";
 import Header from "../header";
 import { AppShell } from "@mantine/core";
 import { Outlet, Route, Routes } from "react-router-dom";
-import { Gtl } from "../../pages/gtl";
-import { GtlPlatform } from "../../pages/gtl-platform";
-import { LegalBasis } from "../../pages/legal-basis";
+const Gtl = lazy(() => import("../../pages/gtl"));
+const GtlPlatform = lazy(() => import("../../pages/gtl-platform"));
+const LegalBasis = lazy(() => import("../../pages/legal-basis"));
+const NormativeBasis = lazy(() => import("../../pages/normative-basis"));
+const Qualification = lazy(() => import("../../pages/qualification"));
 
 function MainLayout() {
   return (
@@ -13,6 +16,8 @@ function MainLayout() {
         <Route path="gtl" element={<Gtl />} />
         <Route path="gtl-platform" element={<GtlPlatform />} />
         <Route path="legal/*" element={<LegalBasis />} />
+        <Route path="normative" element={<NormativeBasis />} />
+        <Route path="qualification/*" element={<Qualification />} />
       </Routes>
       <Outlet />
     </AppShell>
