@@ -51,7 +51,7 @@ export function HeaderTop({ opened, toggleOpened }: HeaderTopProps) {
     <Box>
       <Container size="lg">
         <Group position="apart" align="center" className={classes.wrapper}>
-          <Box sx={{ height: "60px" }} component={Link} to="/">
+          <Box sx={{ height: "80px" }} component={Link} to="/">
             <img src={logo} alt="site logotype" style={{ height: "100%" }} />
           </Box>
           {!smallerThanSm ? (

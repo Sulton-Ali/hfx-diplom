@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ILink {
   label: string[];
   link: string;
@@ -7,7 +5,7 @@ interface ILink {
 }
 export const links: ILink[] = [
   {
-    label: ["Bosh sahifa"],
+    label: ["Biz haqimizda"],
     link: "/",
   },
   {
@@ -15,12 +13,16 @@ export const links: ILink[] = [
     link: "/legal",
   },
   {
-    label: ["Mehnatni muhofaza", "qilishning me`yoriy asoslari"],
+    label: ["Sanoat", "xavfsizligi"],
     link: "/normative",
   },
   {
-    label: ["Mehnatni muhofaza qilish", "bo‘yicha malaka oshirish"],
+    label: ["Atrof-muhit", "muhofazasi"],
     link: "/qualification",
+  },
+  {
+    label: ["O'quv uslubiy", "yordam"],
+    link: "/teach-support",
   },
   {
     label: ["E’lonlar"],

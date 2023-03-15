@@ -12,7 +12,7 @@ function AppHeader() {
 
   return (
     <Header
-      height={smallerThanSm ? 92 : 166}
+      height={smallerThanSm ? 112 : 216}
       sx={{
         display: "flex",
         flexDirection: "column",
