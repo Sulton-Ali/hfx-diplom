@@ -39,7 +39,7 @@ export const acts: ILawInfo[] = [
   },
   {
     title:
-      "Ish beruvchiningfuqarolik javobgarligini majburiy sug’urta qilish to’g’risida”gi O’zbekiston Respublikasi qonunini amalga oshirish chora-tadbirlari haqida",
+      "Ish beruvchining fuqarolik javobgarligini majburiy sug’urta qilish to’g’risida”gi O’zbekiston Respublikasi qonunini amalga oshirish chora-tadbirlari haqida",
     description: "24.06.2009-yil № 177",
     link: "https://lex.uz/docs/1493389",
   },

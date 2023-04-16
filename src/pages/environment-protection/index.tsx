@@ -5,11 +5,15 @@ import {
   SimpleGrid,
   createStyles,
   useMantineTheme,
+  Title,
+  Group,
+  Button,
 } from "@mantine/core";
 import { LawInfoCard } from "../../components/law-info-card";
 import { PageTitle } from "../../components/page-title";
-import { instructions } from "../normative-basis/data/instructions";
 import { docs } from "./data/docs";
+
+import environment_protection from "../../assets/environment_protection.pdf";
 
 const useStyles = createStyles(() => ({
   root: {
@@ -32,6 +36,22 @@ export default function EnvironmentProtection() {
       <Container size="lg">
         <PageTitle>Atrof muhit muhofazasi</PageTitle>
         <Space h={20} />
+        <Group
+          position="apart"
+          spacing={24}
+          align="center"
+          py={16}
+          mb={24}
+          noWrap
+        >
+          <Title order={4}>
+            BIRLASHGAN MILLATLAR TASHKILOTI YEVROPA IQTISODIY KOMISSIYASI
+            ATROF-MUHIT SIYOSATI QO‘MITASI ATROF-MUHIT HOLATINING SHARHI
+          </Title>
+          <Button component="a" download href={environment_protection}>
+            Ko`chirib olish
+          </Button>
+        </Group>
         <SimpleGrid
           cols={4}
           breakpoints={[
