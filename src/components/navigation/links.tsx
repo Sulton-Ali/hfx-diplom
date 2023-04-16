@@ -18,7 +18,7 @@ export const links: ILink[] = [
   },
   {
     label: ["Atrof-muhit", "muhofazasi"],
-    link: "/qualification",
+    link: "/environment",
   },
   {
     label: ["O'quv uslubiy", "yordam"],

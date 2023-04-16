@@ -1,6 +1,6 @@
 import { ILawInfo } from "../../../components/law-info-card";
 
-export const normatives: ILawInfo[] = [
+export const docs: ILawInfo[] = [
   {
     title: "Mehnatni muhofaza qilish bo’yicha vakil to’g’risida nizom",
     description: "18.12.1995-yil № 196",

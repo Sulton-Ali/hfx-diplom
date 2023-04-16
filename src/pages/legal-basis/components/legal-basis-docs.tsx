@@ -1,15 +1,16 @@
 import { Box, SimpleGrid, Space, Title, useMantineTheme } from "@mantine/core";
 import { LawInfoCard } from "../../../components/law-info-card";
-import { laws } from "../data/laws";
+import { docs } from "../data/docs";
 
-export function LegalBasisLaws() {
+export function LegalBasisDocs() {
   const theme = useMantineTheme();
   return (
     <Box>
       <Title order={2} sx={{ textAlign: "center" }}>
-        Qonunlar
+        Adliya vazirligidan ro'yhatdan normativ-huquqiy hujjatlar
       </Title>
       <Space h={40} />
+
       <SimpleGrid
         cols={4}
         breakpoints={[
@@ -18,8 +19,8 @@ export function LegalBasisLaws() {
           { maxWidth: theme.breakpoints.xs, cols: 1 },
         ]}
       >
-        {laws.map((law) => (
-          <LawInfoCard info={law} />
+        {docs.map((instruction) => (
+          <LawInfoCard info={instruction} />
         ))}
       </SimpleGrid>
     </Box>

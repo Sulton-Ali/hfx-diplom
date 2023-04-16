@@ -33,6 +33,7 @@ const useStyles = createStyles((theme) => ({
     lineHeight: 1.3,
     fontWeight: 700,
     fontFamily: "Roboto, sans-serif",
+    textAlign: "center",
 
     [`@media(max-width: ${theme.breakpoints.md}px)`]: {
       fontSize: "15px",

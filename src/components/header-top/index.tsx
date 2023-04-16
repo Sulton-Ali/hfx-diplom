@@ -10,7 +10,7 @@ import {
 } from "@mantine/core";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/images/hfx_murodov_logo.webp";
+import logo from "../../assets/images/mmqo_va_yop.webp";
 import { IconMail, IconPhone } from "@tabler/icons-react";
 import { useMediaQuery } from "@mantine/hooks";
 

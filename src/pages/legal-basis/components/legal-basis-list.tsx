@@ -28,8 +28,9 @@ const useListStyles = createStyles((theme) => ({
 
 export enum LEGAL_BASIS_LINKS {
   LAWS = "laws",
+  LAW_BOOKS = "lawbooks",
   ACTS = "acts",
-  INSTRUCTIONS = "instructions",
+  DOCS = "docs",
 }
 
 export function LegalBasisList() {
@@ -50,7 +51,18 @@ export function LegalBasisList() {
                 <Center className={classes.iconWrapper}>
                   <IconBooks size={24} className={classes.icon} />
                 </Center>
-                <Text className={classes.text}>Qonunlar, Kodekslar</Text>
+                <Text className={classes.text}>Qonunlar</Text>
+              </Group>
+            ),
+          },
+          {
+            value: LEGAL_BASIS_LINKS.LAW_BOOKS,
+            label: (
+              <Group noWrap>
+                <Center className={classes.iconWrapper}>
+                  <IconBooks size={24} className={classes.icon} />
+                </Center>
+                <Text className={classes.text}>Kodekslar</Text>
               </Group>
             ),
           },
@@ -62,20 +74,20 @@ export function LegalBasisList() {
                   <IconBooks size={24} className={classes.icon} />
                 </Center>
                 <Text className={classes.text}>
-                  Vazirlar Mahkamasining qarorlari{" "}
+                  Vazirlar Mahkamasining qarorlari
                 </Text>
               </Group>
             ),
           },
           {
-            value: LEGAL_BASIS_LINKS.INSTRUCTIONS,
+            value: LEGAL_BASIS_LINKS.DOCS,
             label: (
               <Group noWrap>
                 <Center className={classes.iconWrapper}>
                   <IconBooks size={24} className={classes.icon} />
                 </Center>
                 <Text className={classes.text}>
-                  Sanoat xavfsizligi yo‘riqnomalari
+                  Adliya vazirligidan ro'yhatdan normativ-huquqiy hujjatlar
                 </Text>
               </Group>
             ),

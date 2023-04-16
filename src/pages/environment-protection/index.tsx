@@ -1,14 +1,15 @@
 import {
   Box,
   Container,
-  createStyles,
-  SimpleGrid,
   Space,
+  SimpleGrid,
+  createStyles,
   useMantineTheme,
 } from "@mantine/core";
 import { LawInfoCard } from "../../components/law-info-card";
 import { PageTitle } from "../../components/page-title";
-import { instructions } from "./data/instructions";
+import { instructions } from "../normative-basis/data/instructions";
+import { docs } from "./data/docs";
 
 const useStyles = createStyles(() => ({
   root: {
@@ -22,13 +23,14 @@ const useStyles = createStyles(() => ({
   },
 }));
 
-export default function NormativeBasis() {
+export default function EnvironmentProtection() {
   const { classes } = useStyles();
   const theme = useMantineTheme();
+
   return (
     <Box className={classes.root}>
       <Container size="lg">
-        <PageTitle>Sanoat xavfsizligi</PageTitle>
+        <PageTitle>Atrof muhit muhofazasi</PageTitle>
         <Space h={20} />
         <SimpleGrid
           cols={4}
@@ -38,7 +40,7 @@ export default function NormativeBasis() {
             { maxWidth: theme.breakpoints.xs, cols: 1 },
           ]}
         >
-          {instructions.map((law) => (
+          {docs.map((law) => (
             <LawInfoCard info={law} />
           ))}
         </SimpleGrid>

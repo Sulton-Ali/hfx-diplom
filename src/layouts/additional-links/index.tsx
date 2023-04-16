@@ -1,20 +1,19 @@
-import {
-  Box,
-  Card,
-  Container,
-  createStyles,
-  SimpleGrid,
-  Space,
-  Stack,
-  Title,
-  useMantineTheme,
-} from "@mantine/core";
 import { Link } from "react-router-dom";
-import { PageTitle } from "../../components/page-title";
 
 import program from "../../assets/images/program.svg";
 import course from "../../assets/images/course.svg";
 import test from "../../assets/images/test.svg";
+import cert from "../../assets/images/certification.svg";
+import {
+  Box,
+  Card,
+  Container,
+  SimpleGrid,
+  Stack,
+  Title,
+  createStyles,
+  useMantineTheme,
+} from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
   title: {
@@ -23,8 +22,10 @@ const useStyles = createStyles((theme) => ({
   },
   link: {
     textDecoration: "none",
+    height: "100%",
   },
   card: {
+    height: "100%",
     "&:hover": {
       backgroundColor: theme.colors[theme.primaryColor][0],
       color: theme.black,
@@ -39,21 +40,22 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-export default function Qualification() {
-  const theme = useMantineTheme();
+export function AdditionalLinks() {
   const { classes } = useStyles();
+  const theme = useMantineTheme();
 
   return (
-    <Box>
+    <Box
+      sx={{
+        paddingTop: 30,
+        paddingBottom: 30,
+      }}
+    >
       <Container size="lg">
-        <PageTitle>
-          Mehnatni muhofaza qilish <br /> bo‘yicha malaka oshirish
-        </PageTitle>
-        <Space h={40} />
         <SimpleGrid
-          cols={3}
+          cols={4}
           breakpoints={[
-            { maxWidth: theme.breakpoints.lg, cols: 3 },
+            { maxWidth: theme.breakpoints.lg, cols: 4 },
             { maxWidth: theme.breakpoints.md, cols: 2 },
             { maxWidth: theme.breakpoints.xs, cols: 1 },
           ]}
@@ -101,7 +103,23 @@ export default function Qualification() {
                   />
                 </Box>
                 <Title order={3} className={classes.title}>
-                  Test sinovi
+                  Bilimlar sinovi
+                </Title>
+              </Stack>
+            </Card>
+          </Link>
+          <Link className={classes.link} to="certificate">
+            <Card className={classes.card} shadow="lg" p={60}>
+              <Stack align="center">
+                <Box className={classes.imgWrapper}>
+                  <img
+                    className={classes.img}
+                    src={cert}
+                    alt="certification illustration"
+                  />
+                </Box>
+                <Title order={3} className={classes.title}>
+                  Sertifikatni yuklab olish
                 </Title>
               </Stack>
             </Card>

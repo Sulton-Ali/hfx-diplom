@@ -14,7 +14,7 @@ export const slideItems: IHeroSlideItem[] = [
   {
     title: "Mehnat muhofazasi nima?",
     description:
-      "insonning mehnat jarayonidagi xavfsizligi, sihat-salomatligi va ish qobilyatining saqlanishiga qaratilgan tadbirlar.",
+      "«Mehnatni muhofaza qilish» insonning ishlab chiqarishdagi faoliyatida sodir bo‘ladigan turli ko‘rinishdagi xavflarni bartaraf etish va ulardan himoyalanish yo‘llarini o‘rganishga qaratilgan tadbirlar majmui va vositalar tizimidan iboratdir",
     link: "#",
     img: about,
     reverse: false,
