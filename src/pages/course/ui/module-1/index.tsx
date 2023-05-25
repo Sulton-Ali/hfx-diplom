@@ -1,4 +1,14 @@
-import { Stack, Title, Text } from "@mantine/core";
+import { Stack, Title, Text, Space } from "@mantine/core";
+
+import doc11 from "../../../../assets/docs/modul-1/1.1.docx";
+import doc12 from "../../../../assets/docs/modul-1/1.2.docx";
+import doc13 from "../../../../assets/docs/modul-1/1.3.docx";
+import doc14 from "../../../../assets/docs/modul-1/1.4.docx";
+import doc15 from "../../../../assets/docs/modul-1/1.5.docx";
+import doc16 from "../../../../assets/docs/modul-1/1.6.docx";
+import doc17 from "../../../../assets/docs/modul-1/1.7.docx";
+import doc18 from "../../../../assets/docs/modul-1/1.8.docx";
+import doc19 from "../../../../assets/docs/modul-1/1.9.docx";
 
 export default function CourseModule1() {
   return (
@@ -7,10 +17,12 @@ export default function CourseModule1() {
         Mehnatni muhofaza qilishning huquqiy va tashkiliy asoslari
       </Title>
       <Stack spacing={4}>
-        <Title order={4}>
-          1.1. Mehnat muhofazasi bo‘yicha asosiy qonunlar, standartlar va
-          me’уоriу hujjatlar
-        </Title>
+        <a href={doc11} download>
+          <Title order={4}>
+            1. Mehnat muhofazasi bo‘yicha asosiy qonunlar, standartlar va
+            me’уоriу hujjatlar
+          </Title>
+        </a>
         <Text component="p">
           <strong>O‘zbekistonda mehnat muhofazasi</strong> – bu tegishli qonun
           va boshqa me’yoriy hujjatlar asosida amal qiluvchi, insonning mehnat
@@ -67,7 +79,7 @@ export default function CourseModule1() {
           muhofazasiga doir qo‘llanmalarda ko‘rsatilgan hamma talablarga amal
           qilishi ustidan doimiy nazorat o‘rnatish ma’muriyat zimmasiga
           yuklanadi. Mehnat sharoiti zararli bo‘lgan ishlarda, shuningdek,
-          alohida harorat sharoitida bajariladigan yoki havoni ifloslantiruvchi
+          alohida harorat sharoitida bajariladigan yoki havoni ifloslantiruvchi
           ishlarda mehnat qiluvchi ishchi va xizmatchilarga belgilangan me’yorda
           maxsus kiyim-bosh, poyabzal va boshqa shaxsiy himoya vositalari
           tekinga beriladi. Mehnat sharoiti ifloslanish bilan bog‘liq va zararli
@@ -129,13 +141,15 @@ export default function CourseModule1() {
           O‘zbekiston Respublikasi qonunlarida belgilangan tartibda intizomiy,
           ma’muriy va jinoiy javobgarlikka tortiladilar (27-modda).
         </Text>
-        <Title order={4}>
-          Kasaba uyushmalarining mehnat muhofazasini tashkil etishdagi roli
-        </Title>
+        <a href={doc12} download>
+          <Title order={4}>
+            2. Kasaba uyushmalarining mehnat muhofazasini tashkil etishdagi roli
+          </Title>
+        </a>
         <Text component="p">
           O‘zbekiston Respublikasi mehnat qonunlari kodeksida kasaba
           uyushmalari, xodimlarning korxonalar, muassasalar, tashkilotlarni
-          boshqarishda qatnashishi alohida bоb bilan ko‘rsatilgan. Qonunda
+          boshqarishda qatnashishi alohida bоb bilan ko‘rsatilgan. Qonunda
           ko‘rsatilishicha mehnatkashlar, shuningdek, oliy va o‘rta maxsus o‘quv
           yurtlarida bilim olayotgan shaxslar hech bir tafovutsiz o‘z
           xohishlariga ko‘га, ixtiyoriy ravishda kasaba uyushmasi tuzish,
@@ -182,7 +196,9 @@ export default function CourseModule1() {
           me’yoriy hujjatlar qabul qilish to‘g‘risidagi takliflarni tegishli
           davlat boshqaruv organlariga kiritishga haqlidirlar.
         </Text>
-        <Title order={4}>Ish vaqti va dam olish rejim</Title>
+        <a href={doc13} download>
+          <Title order={4}>3. Ish vaqti va dam olish rejim</Title>
+        </a>
         <Text component="p">
           Korxona, muassasa, tashkilotlarda xodimlar ish vaqtining me’-yoriy
           muddati haftasiga 40 soatdan oshiq bo‘lishi mumkin emas.
@@ -327,9 +343,11 @@ export default function CourseModule1() {
           va imkoniyatlariga qarab xodim tomonidan keyinchalik ishlab berilishi
           mumkin.
         </Text>
-        <Title order={4}>
-          1.4. Ауоllаr va yoshlar mehnatini muhofaza qilis
-        </Title>
+        <a href={doc14} download>
+          <Title order={4}>
+            4. Ауоllаr va yoshlar mehnatini muhofaza qilis
+          </Title>
+        </a>
         <Text component="p">
           <i>Ayollar mehnati.</i> Og‘ir ishlarda va mehnat sharoiti zararli
           bo‘lgan ishlarda, shuningdek, yer osti ishlarida ayollar mehnatini
@@ -425,11 +443,13 @@ export default function CourseModule1() {
           tashqari, faqat voyaga yetmaganlar ishlari bilan shug‘ulla-nuvchi
           tuman (shahar) komissiyasi roziligi bilangina уo‘1 qo‘yiladi.
         </Text>
-        <Title order={4}>
-          Mehnat qonunlariga rioya etilishini nazorat qilish
-        </Title>
+        <a href={doc15} download>
+          <Title order={4}>
+            5. Mehnat qonunlariga rioya etilishini nazorat qilish
+          </Title>
+        </a>
         <Title order={5}>
-          1.5.1. Mehnat qonunlariga rioya etilishini nazorat qilish
+          5.1. Mehnat qonunlariga rioya etilishini nazorat qilish
         </Title>
         <Text component="p">
           Mehnat muhofazasi bo‘yicha qonunlarga, ishlab chiqarish sanitariyasi
@@ -507,7 +527,9 @@ export default function CourseModule1() {
           jarima undirib olinadi. Agar ular ushbu javobgarlikdan norozi
           bo‘lishsa, 10 kun ichida sudga murojaat qilishlari mumkin.
         </Text>
-        <Title order={4}>1.6. Mehnat muhofazasini rejalashtirish</Title>
+        <a href={doc16}>
+          <Title order={4}>6. Mehnat muhofazasini rejalashtirish</Title>
+        </a>
         <Text component="p">
           Ishlab chiqarishda mehnat sharoitini yaxshilash hamda sog‘lom va
           xavfsiz ish sharoitini tashkil etish uchun birinchi navbatda mehnat
@@ -628,9 +650,11 @@ export default function CourseModule1() {
           (O‘zbekiston Respublikasining Mehnatni muhofaza qilish to‘g‘risida»gi
           Qonuni, 11-modda).
         </Text>
-        <Title order={4}>
-          1.7. Mehnat muhofazasi va xavfsizlik texnikasi bo‘yicha o‘qitish
-        </Title>
+        <a href={doc17} download>
+          <Title order={4}>
+            7. Mehnat muhofazasi va xavfsizlik texnikasi bo‘yicha o‘qitish
+          </Title>
+        </a>
         <Text component="p">
           Ishlab chiqarishda faoliyat ko‘rsatadigan har bir ishchi va xodim
           o‘ziga berkitilgan ishni xavfsiz bajarishi uchun chuqur bilimga ega
@@ -728,10 +752,12 @@ export default function CourseModule1() {
           bo‘yicha kurs o‘qishlaridan o‘tagan ishchi-xodimlarga guvohnоmа
           beriladi
         </Text>
-        <Title order={4}>
-          1.8. Maxsus kiyim-boshlar, shaxsiy himoya vositalari va parhez
-          oziq-ovqatlar bilan ta’minlash
-        </Title>
+        <a href={doc18}>
+          <Title order={4}>
+            8. Maxsus kiyim-boshlar, shaxsiy himoya vositalari va parhez
+            oziq-ovqatlar bilan ta’minlash
+          </Title>
+        </a>
         <Text component="p">
           O‘zbekiston Respublikasining «Mehnat kodeksi» va «Mehnatni muhofaza
           qilish to‘g‘risida»gi Qonunlari asosida mehnat sharoiti zararli
@@ -770,10 +796,12 @@ export default function CourseModule1() {
           tekinga berib turiladi. Agar ish issiq sexlarda bajariladigan bo‘lsa,
           tekinga gazli sho‘г suv berilishi shart.
         </Text>
-        <Title order={4}>
-          1.9. Ishlab chiqarishda baxtsiz hodisalarni tekshirish va hisobga
-          olish
-        </Title>
+        <a href={doc19}>
+          <Title order={4}>
+            9. Ishlab chiqarishda baxtsiz hodisalarni tekshirish va hisobga
+            olish
+          </Title>
+        </a>
         <Text component="p">
           O‘zbekiston Respublikasi hududida mulkchilikning barcha shakllaridagi
           korxonalar, muassasalar, tashkilotlarda, shuningdek, mehnat
@@ -1013,6 +1041,7 @@ export default function CourseModule1() {
           nazorati ostida bo‘lgan mahalliy organlariga yozma ravishda axborot
           beradi
         </Text>
+        <Space h={50} />
       </Stack>
     </Stack>
   );

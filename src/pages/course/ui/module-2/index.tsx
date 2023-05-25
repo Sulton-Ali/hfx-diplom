@@ -1,5 +1,12 @@
-import { Stack, Title, Text } from "@mantine/core";
-import hfxTable from "../../../../assets/images/hfx-table.png";
+import { Stack, Title, Text, Space } from "@mantine/core";
+import module2Table from "../../../../assets/images/lessons-schema/module-2-table.png";
+
+import doc21 from "../../../../assets/docs/modul-2/2.1.docx";
+import doc22 from "../../../../assets/docs/modul-2/2.2.docx";
+import doc23 from "../../../../assets/docs/modul-2/2.3.docx";
+import doc24 from "../../../../assets/docs/modul-2/2.4.docx";
+import doc25 from "../../../../assets/docs/modul-2/2.5.docx";
+import doc26 from "../../../../assets/docs/modul-2/2.6.docx";
 
 export default function CourseModule2() {
   return (
@@ -8,9 +15,11 @@ export default function CourseModule2() {
         Ishlab chiqarish sanitariyasi va mehnat gigenasi
       </Title>
       <Stack spacing={4}>
-        <Title order={4}>
-          1. Ishlab chiqarish sanitariyasining umumiy tushuncha va ta’riflari
-        </Title>
+        <a href={doc21} download>
+          <Title order={4}>
+            1. Ishlab chiqarish sanitariyasining umumiy tushuncha va ta’riflari
+          </Title>
+        </a>
         <Text component="p">
           <strong>Ishlab chiqarish sanitariyasi</strong> – bu ishchilarga ta’sir
           etuvchi zararli omillarni bartaraf etishga qaratilgan tashkiliy,
@@ -106,9 +115,11 @@ export default function CourseModule2() {
           mexanizatsiyalash, avtomatlashtirish, germetiklashtirish orqali amalga
           oshiriladi.
         </Text>
-        <Title order={4}>
-          Kasb kasalligining oldini olish va shaxsiy gigiyena
-        </Title>
+        <a href={doc22} download>
+          <Title order={4}>
+            2. Kasb kasalligining oldini olish va shaxsiy gigiyena
+          </Title>
+        </a>
         <Text component="p">
           Mehnat qilish jarayonida kishi organizmiga salbiy ta’sir etadigan
           ishlab chiqarishning nomaqbul omillari natijasida yuzaga keladigan
@@ -280,8 +291,8 @@ export default function CourseModule2() {
           chiqariladigan uglerod oksidi-ning (is gazi) yillik miqdori taxminan 8
           million tonnaga yetadi.
         </Text>
-        <Title order={4}>
-          3. Ishlab chiqarish chiqindilari va zaharli moddalar
+        <Title order={5}>
+          Ishlab chiqarish chiqindilari va zaharli moddalar
         </Title>
         <Text component="p">
           Ishlab chiqarishda foydalaniladigan yoki texnologik jarayonlarni
@@ -394,9 +405,11 @@ export default function CourseModule2() {
           ishlab chiqarish to‘liq avtomatlashtirilib masofadan boshqarish
           tizimlari tatbiq etiladi.
         </Text>
-        <Title order={4}>
-          Ishlab chiqarish binolari va ish joylarining mikroiqlimi
-        </Title>
+        <a href={doc23} download>
+          <Title order={4}>
+            3. Ishlab chiqarish binolari va ish joylarining mikroiqlimi
+          </Title>
+        </a>
         <Text component="p">
           Ishlab chiqarish binolari va ish joylarining mikroiqlimi ishchining
           sog‘lig‘iga va ish unumdorligiga ta’sir etuvchi asosiy omillardan biri
@@ -441,7 +454,7 @@ export default function CourseModule2() {
           psixrometrlar, issiqlik nurlanishlari – aktinometrlar va havoning
           bosimi – barometrlar bilan o‘lchanadi.
         </Text>
-        <img src={hfxTable} alt="table" />
+        <img src={module2Table} alt="table" />
         <Text component="p">
           Mikroiqlim ko‘rsatkichlarining haqiqiy miqdorlari aniqlangach, bu
           miqdorlar optimal ruxsat etilgan miqdorlar bilan taqqoslanadi hamda
@@ -530,20 +543,22 @@ export default function CourseModule2() {
           elektr isitish jihozlaridan foydalanilishi mumkin. Наvо bilan isitish
           tizimlarida harorat shamollatish orqali rostlanadi.
         </Text>
-        {/* <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text>
-        <Text component="p"></Text> */}
+
+        <a href={doc24} download>
+          <Title order={4}>
+            4. Ishlab chiqarish binolari va ish joylarini shamollatish
+          </Title>
+        </a>
+        <a href={doc25} download>
+          <Title order={4}>5. Shovqin va undan himoyalanish</Title>
+        </a>
+        <a href={doc26} download>
+          <Title order={4}>
+            6. Titrash va undan himoyalanish. Yortish va yoritilganlik. Zararli
+            va zaharli nurlar
+          </Title>
+        </a>
+        <Space h={50} />
       </Stack>
     </Stack>
   );
