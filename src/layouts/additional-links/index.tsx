@@ -67,7 +67,7 @@ export function AdditionalLinks() {
                   <img
                     className={classes.img}
                     src={program}
-                    alt="course illustration"
+                    alt="program illustration"
                   />
                 </Box>
                 <Title order={3} className={classes.title}>
@@ -99,7 +99,7 @@ export function AdditionalLinks() {
                   <img
                     className={classes.img}
                     src={test}
-                    alt="course illustration"
+                    alt="test illustration"
                   />
                 </Box>
                 <Title order={3} className={classes.title}>
