@@ -13,6 +13,7 @@ const LaborProtection = lazy(() => import("../../pages/labor-protection"));
 const TeachSupport = lazy(() => import("../../pages/teach-support"));
 const AboutPlatform = lazy(() => import("../../pages/about-platform"));
 const Course = lazy(() => import("../../pages/course"));
+const Test = lazy(() => import("../../pages/test"));
 const Program = lazy(() => import("../../pages/program"));
 
 function MainLayout() {
@@ -29,6 +30,7 @@ function MainLayout() {
         <Route path="labor-protection" element={<LaborProtection />} />
         <Route path="teach-support" element={<TeachSupport />} />
         <Route path="course/*" element={<Course />} />
+        <Route path="test/*" element={<Test />} />
         <Route path="program" element={<Program />} />
       </Routes>
       <Outlet />
