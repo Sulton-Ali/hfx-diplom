@@ -10,14 +10,18 @@ import {
   Tooltip,
 } from "@mantine/core";
 
-import tests from "../data/module-1";
 import { useCallback, useEffect, useState } from "react";
 import { TestCard } from "./test-card";
 import { useTestStore } from "../store";
-import testsModule1 from "../data/module-1";
 import { useNavigate } from "react-router-dom";
+import { ITest } from "../data/types";
 
-export function TestModule1() {
+type TestModuleProps = {
+  id: number;
+  tests: ITest[];
+};
+
+export function TestModule({ id, tests }: TestModuleProps) {
   const [currentTab, setCurrentTab] = useState<string>("1");
 
   const testData = useTestStore((state) => state.data);
@@ -28,7 +32,7 @@ export function TestModule1() {
   useEffect(() => {
     updateData({
       id: 1,
-      total: testsModule1.length,
+      total: tests.length,
     });
   }, []);
 
@@ -103,6 +107,7 @@ export function TestModule1() {
               </Title>
             </Stack>
           </Group>
+          <Space h={40} />
           <Group position="center">
             <Button
               onClick={() => {

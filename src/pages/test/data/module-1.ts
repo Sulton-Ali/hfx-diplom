@@ -2,7 +2,7 @@ import { ITest } from "./types";
 
 const testsModule1: ITest[] = [
   {
-    id: 1,
+    id: '1-1',
     question: "Mehnat  huquqi  normalari nimani belgilaydi?",
     variants: [
       {
@@ -30,7 +30,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: 2,
+    id: '1-2',
     question:
       "Mehnat  sohasida  tashkiliy  boshqaruvga  oid  munosabatlar nimada aks etadi?",
     variants: [
@@ -61,7 +61,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: 3,
+    id: '1-3',
     question: "Ishga joylashtirishga doir munosabatlar nimada aks etadi?",
     variants: [
       {
@@ -90,7 +90,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: 4,
+    id: '1-4',
     question:
       "Mehnat muhofazasi va mehnat qonunlarnga rioya etishni nazorat qilishga doir munosabatlar nima aks etadi?",
     variants: [
@@ -121,7 +121,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: 5,
+    id: '1-5',
     question:
       "Mehnat nizolarini hal qilishga doir munosabatlar nima aks etadi?",
     variants: [
@@ -152,7 +152,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: 6,
+    id: '1-6',
     question: "Mehnat huquqi uslubi va vazifalari nimalardan iborat?",
     variants: [
       {
@@ -182,7 +182,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: 7,
+    id: '1-7',
     question: "Mehnat  huquqi  qanday vazifalarini  bajaradi?",
     variants: [
       {
@@ -212,7 +212,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: 8,
+    id: '1-8',
     question: "Mehnat huquqi tizimi  deganda nima tushuniladi?",
     variants: [
       {
@@ -242,7 +242,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: 9,
+    id: '1-9',
     question: "Mehnat huquqi tizimi  necha qismga bo‘linadi?",
     variants: [
       {
@@ -269,7 +269,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: 10,
+    id: '1-10',
     question: "Fuqarolik huquqiy munosabatlar deganda nima tushuniladi?",
     variants: [
       {

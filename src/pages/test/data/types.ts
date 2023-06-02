@@ -5,7 +5,7 @@ export interface ITestVariant {
 }
 
 export interface ITest {
-  id: number;
+  id: string;
   question: string;
   variants: ITestVariant[];
 }
