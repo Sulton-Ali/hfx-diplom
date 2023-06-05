@@ -108,7 +108,7 @@ export function AdditionalLinks() {
               </Stack>
             </Card>
           </Link>
-          <Link className={classes.link} to="certificate">
+          <Link className={classes.link} to="test/certificate">
             <Card className={classes.card} shadow="lg" p={60}>
               <Stack align="center">
                 <Box className={classes.imgWrapper}>

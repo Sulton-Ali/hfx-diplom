@@ -8,6 +8,7 @@ import testsModule2 from "./data/module-2";
 import testsModule3 from "./data/module-3";
 import testsModule4 from "./data/module-4";
 import testsModule5 from "./data/module-5";
+import CertificatePage from "./ui/certificate";
 
 export default function Test() {
   return (
@@ -36,6 +37,10 @@ export default function Test() {
           <Route
             path="5"
             element={<TestModule id={5} tests={testsModule5} />}
+          />
+          <Route
+            path="certificate"
+            element={<CertificatePage />}
           />
         </Routes>
       </Container>

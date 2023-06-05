@@ -9,19 +9,22 @@ import {
   Title,
   Tooltip,
 } from "@mantine/core";
+import { PDFDownloadLink } from "@react-pdf/renderer";
 
 import { useCallback, useEffect, useState } from "react";
 import { TestCard } from "./test-card";
 import { useTestStore } from "../store";
 import { useNavigate } from "react-router-dom";
 import { ITest } from "../data/types";
+import { CertificateDoc } from "./certificate-doc";
 
 type TestModuleProps = {
   id: number;
   tests: ITest[];
+  isFinal?: boolean;
 };
 
-export function TestModule({ id, tests }: TestModuleProps) {
+export function TestModule({ id, tests, isFinal = false }: TestModuleProps) {
   const [currentTab, setCurrentTab] = useState<string>("1");
 
   const testData = useTestStore((state) => state.data);
@@ -109,20 +112,35 @@ export function TestModule({ id, tests }: TestModuleProps) {
           </Group>
           <Space h={40} />
           <Group position="center">
-            <Button
-              onClick={() => {
-                updateData({
-                  id: 1,
-                  total: 1,
-                  current: 1,
-                  correct: 0,
-                  incorrect: 0,
-                });
-                navigate("/test");
-              }}
-            >
-              Testlarga qaytish
-            </Button>
+            {!isFinal ? (
+              <Button
+                onClick={() => {
+                  updateData({
+                    id: 1,
+                    total: 1,
+                    current: 1,
+                    correct: 0,
+                    incorrect: 0,
+                  });
+                  navigate("/test");
+                }}
+              >
+                Testlarga qaytish
+              </Button>
+            ) : null}
+            {isFinal && progressValue > 71 ? (
+              <PDFDownloadLink
+                document={
+                  <CertificateDoc name="S.H.MURADOV" ball={progressValue} />
+                }
+              >
+                {({ blob, url, loading, error }) => {
+                  return loading
+                    ? "Xujjat yuklanmoqda..."
+                    : "Sertifikat yuklab olish";
+                }}
+              </PDFDownloadLink>
+            ) : null}
           </Group>
         </Tabs.Panel>
       </Tabs>

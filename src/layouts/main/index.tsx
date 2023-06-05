@@ -15,6 +15,7 @@ const AboutPlatform = lazy(() => import("../../pages/about-platform"));
 const Course = lazy(() => import("../../pages/course"));
 const Test = lazy(() => import("../../pages/test"));
 const Program = lazy(() => import("../../pages/program"));
+const Certificate = lazy(() => import("../../pages/test/ui/certificate"));
 
 function MainLayout() {
   return (
@@ -32,6 +33,7 @@ function MainLayout() {
         <Route path="course/*" element={<Course />} />
         <Route path="test/*" element={<Test />} />
         <Route path="program" element={<Program />} />
+        <Route path="certificate" element={<Certificate />} />
       </Routes>
       <Outlet />
     </AppShell>

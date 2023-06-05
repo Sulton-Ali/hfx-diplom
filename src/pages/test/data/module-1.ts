@@ -2,7 +2,7 @@ import { ITest } from "./types";
 
 const testsModule1: ITest[] = [
   {
-    id: '1-1',
+    id: "1-1",
     question: "Mehnat  huquqi  normalari nimani belgilaydi?",
     variants: [
       {
@@ -30,7 +30,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: '1-2',
+    id: "1-2",
     question:
       "Mehnat  sohasida  tashkiliy  boshqaruvga  oid  munosabatlar nimada aks etadi?",
     variants: [
@@ -61,7 +61,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: '1-3',
+    id: "1-3",
     question: "Ishga joylashtirishga doir munosabatlar nimada aks etadi?",
     variants: [
       {
@@ -90,7 +90,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: '1-4',
+    id: "1-4",
     question:
       "Mehnat muhofazasi va mehnat qonunlarnga rioya etishni nazorat qilishga doir munosabatlar nima aks etadi?",
     variants: [
@@ -121,7 +121,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: '1-5',
+    id: "1-5",
     question:
       "Mehnat nizolarini hal qilishga doir munosabatlar nima aks etadi?",
     variants: [
@@ -152,7 +152,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: '1-6',
+    id: "1-6",
     question: "Mehnat huquqi uslubi va vazifalari nimalardan iborat?",
     variants: [
       {
@@ -182,7 +182,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: '1-7',
+    id: "1-7",
     question: "Mehnat  huquqi  qanday vazifalarini  bajaradi?",
     variants: [
       {
@@ -212,7 +212,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: '1-8',
+    id: "1-8",
     question: "Mehnat huquqi tizimi  deganda nima tushuniladi?",
     variants: [
       {
@@ -242,7 +242,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: '1-9',
+    id: "1-9",
     question: "Mehnat huquqi tizimi  necha qismga bo‘linadi?",
     variants: [
       {
@@ -269,7 +269,7 @@ const testsModule1: ITest[] = [
     ],
   },
   {
-    id: '1-10',
+    id: "1-10",
     question: "Fuqarolik huquqiy munosabatlar deganda nima tushuniladi?",
     variants: [
       {
@@ -295,6 +295,299 @@ const testsModule1: ITest[] = [
         title:
           "muayyan mehnat topshirig‘ini bajarish yoki xizmat ko‘rsatish bilan bog‘liq bo‘lgan xolatlarni o‘rganish va tartibga solishdan iborat",
         isCorrect: false,
+      },
+    ],
+  },
+  // new tests
+  {
+    id: "1-11",
+    question: "Mehnat huquqi tushunchasi nimadan iborat?",
+    variants: [
+      {
+        name: "A",
+        title:
+          "yollanma  ishlayotgan xodimlar mehnatga oid munosabatlarini tartibga soladi",
+        isCorrect: false,
+      },
+      {
+        name: "B",
+        title:
+          "halqaro shartnomasi bo‘yicha ishlayotgan xodimlar mehnatga oid munosabatlarini tartibga soladi",
+        isCorrect: false,
+      },
+      {
+        name: "D",
+        title:
+          "mehnat shartnomasi bo‘yicha ishlayotgan xodimlar mehnatga oid munosabatlarini tartibga soladi",
+        isCorrect: true,
+      },
+      {
+        name: "E",
+        title:
+          "vaqtincha ishlayotgan xodimlar mehnatga oid munosabatlarini tartibga soladi",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: "1-12",
+    question:
+      "O‘zbekiston Respublikasi Konstitutsiya qaysi moddasida  “Har  bir  shaxs  mehnat  qilish,  erkin kasb tanlash, adolatli mehnat sharoitlarida ishlash va qonunda ko‘rsatilgan tartibda ishsizlikdan himoyalanish xuquqiga egadir” deb belgilangan?",
+    variants: [
+      {
+        name: "A",
+        title: "37-moddasida",
+        isCorrect: true,
+      },
+      {
+        name: "B",
+        title: "38- moodasida",
+        isCorrect: false,
+      },
+      {
+        name: "D",
+        title: "40 moddasida",
+        isCorrect: false,
+      },
+      {
+        name: "E",
+        title: "Konstitutsiyada bunday izoh berilmagan",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: "1-13",
+    question:
+      "Mehnat bozorini va aholini ish bilan ta’minlashni huquqiy jihatdan tartibga solish sohasidagi davlat siyosatini ifodalovchi tamoyillari nimani ifodalaydi?",
+    variants: [
+      {
+        name: "A",
+        title: "mehnat mintaqaviy masalasini ifoda etadi",
+        isCorrect: false,
+      },
+      {
+        name: "B",
+        title: "mehnat erkinligi masalasini ifoda etadi",
+        isCorrect: false,
+      },
+      {
+        name: "D",
+        title: "mehnat iqtisodiy jihatini ifoda etadi",
+        isCorrect: false,
+      },
+      {
+        name: "E",
+        title: "mehnat majburiyligi masalasini ifoda etadi",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    id: "1-14",
+    question:
+      "Xodimlar mehnatning qo‘llanilishini tartibga solishni belgilovchi tamoyillari nimada ifodalaydi?  ",
+    variants: [
+      {
+        name: "A",
+        title: "mehnatga oid huquqiy  munosabatlari vaqtinchaligini ifodalaydi",
+        isCorrect: false,
+      },
+      {
+        name: "B",
+        title: "mehnatga oid huquqiy  munosabatlari muddatligini ifodalaydi",
+        isCorrect: false,
+      },
+      {
+        name: "D",
+        title: "mehnatga oid huquqiy  munosabatlari davriyligini ifodalaydi",
+        isCorrect: true,
+      },
+      {
+        name: "E",
+        title: "mehnatga oid huquqiy  munosabatlari to‘rgunligini ifodalaydi",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: "1-15",
+    question:
+      "Xodimlarning mehnat huquqlarini himoya qilishni ifoda etuvchi tamoyillari nimani ifodalaydi?",
+    variants: [
+      {
+        name: "A",
+        title:
+          "xodimlarning iqtisodiy va ijtimoiy muhofaza qilish bilan belgilanadi",
+        isCorrect: false,
+      },
+      {
+        name: "B",
+        title:
+          "xodimlarning faoliyati va yashashini muhofaza qilish bilan belgilanadi",
+        isCorrect: true,
+      },
+      {
+        name: "D",
+        title:
+          "xodimlarning mehnati va sog‘ligini muhofaza qilish bilan belgilanadi",
+        isCorrect: false,
+      },
+      {
+        name: "E",
+        title:
+          "xodimlarning siyosiy qarashini muhofaza qilish bilan belgilanadi",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: "1-16",
+    question: "Mehnat huquqi manbalari nimalardan iborat?",
+    variants: [
+      {
+        name: "A",
+        title:
+          "mehnatga oid munosabatlar va ular bilan uzviy ravishda bog‘liq bo‘lgan boshqa munosabatlarni tartibga soluvchi mehnat kodeksi ",
+        isCorrect: false,
+      },
+      {
+        name: "B",
+        title:
+          "mehnatga oid munosabatlar va ular bilan uzviy ravishda bog‘liq bo‘lgan boshqa munosabatlarni tartibga soluvchi turli normativ-huquqiy xujjatlardir",
+        isCorrect: false,
+      },
+      {
+        name: "D",
+        title:
+          "mehnatga oid munosabatlar va ular bilan uzviy ravishda bog‘liq bo‘lgan boshqa munosabatlarni tartibga soluvchi mehnatni muhofaza qilish to‘g‘risidagi qonuni",
+        isCorrect: true,
+      },
+      {
+        name: "E",
+        title:
+          "mehnatga oid munosabatlar va ular bilan uzviy ravishda bog‘liq bo‘lgan boshqa munosabatlarni tartibga soluvchi konstitutsiyasi",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: "1-17",
+    question: "Normativ huquqiy xujjatlar necha qismga bo‘linadi?",
+    variants: [
+      {
+        name: "A",
+        title:
+          "ikki qismga,  konstitutsiya  va qonunlar",
+        isCorrect: false,
+      },
+      {
+        name: "B",
+        title:
+          "ikki qismga, qonunlar va  Vazirlar Mahkamasi qarorlari",
+        isCorrect: false,
+      },
+      {
+        name: "D",
+        title:
+          "ikki qismga, qonunlar va qonunosti xujjatlari",
+        isCorrect: false,
+      },
+      {
+        name: "E",
+        title:
+          "uch qismga,  konstitutsiya, qonunlar va qonun osti xujjatlari",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    id: "1-18",
+    question: "Umumiy majburiy tusdagi normativ xujjatlar qabul qilingan  kundan  boshlab  necha kun ichida Uzbekistan  Respublikasi Adliya vazirligiga davlat ruyxatidan o‘tkazish uchun taqdim etilishi kerak? ",
+    variants: [
+      {
+        name: "A",
+        title:
+          "bir oy  mobaynida",
+        isCorrect: true,
+      },
+      {
+        name: "B",
+        title:
+          "o'n  kun  mobaynida",
+        isCorrect: false,
+      },
+      {
+        name: "D",
+        title:
+          "bir  kun  mobaynida",
+        isCorrect: false,
+      },
+      {
+        name: "E",
+        title:
+          "muddati belgilanmagan",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: "1-19",
+    question: "Adliya  vazirligida davlat ro'yxatidan  o‘tkazilmagan umumiy majburiy tusdagi normativ xujjatlarni ijro etish ommaviy axborot vositalarida e’lon qilish mumkin-mi? ",
+    variants: [
+      {
+        name: "A",
+        title:
+          "mumkin emas",
+        isCorrect: true,
+      },
+      {
+        name: "B",
+        title:
+          "ha, mumkin",
+        isCorrect: false,
+      },
+      {
+        name: "D",
+        title:
+          "normativ xujjatni tayyorlagan organ belgilaydi",
+        isCorrect: false,
+      },
+      {
+        name: "E",
+        title:
+          "normativ xujjat qiymatiga bog‘liq",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    id: "1-20",
+    question: "Lokal normativ xujjatlar toifasiga qanday xujjatlar kiradi?",
+    variants: [
+      {
+        name: "A",
+        title:
+          "qonunlar, xodimlarni mukofotlash Prezident formayishlari, turli yo‘riqnomalar singari xujjatlar kiradi",
+        isCorrect: false,
+      },
+      {
+        name: "B",
+        title:
+          "ichki  mehnat tartibi  qoidalari. ustav  va  nizomlar xodimlarni mukofotlash to‘g‘risidagi qoidalar, turli yo‘riqnomalar ",
+        isCorrect: false,
+      },
+      {
+        name: "D",
+        title:
+          "qonunlar, Vazirlar Mahkamasi qarorlari, qoidalar, turli yo‘riqnomalar singari xujjatlar kiradi",
+        isCorrect: false,
+      },
+      {
+        name: "E",
+        title:
+          "ustav  va  nizomlar xodimlarni mukofotlash to‘g‘risidagi yuqori organ buyriqlari, turli yo‘riqnomalar",
+        isCorrect: true,
       },
     ],
   },

@@ -16,6 +16,7 @@
     "@mantine/hooks": "^5.10.5",
     "@mantine/modals": "^5.10.5",
     "@mantine/notifications": "^5.10.5",
+    "@react-pdf/renderer": "^3.1.11",
     "@tabler/icons-react": "^2.6.0",
     "dayjs": "^1.11.7",
     "embla-carousel-react": "^7.0.9",
