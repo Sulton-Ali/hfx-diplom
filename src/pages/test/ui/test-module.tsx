@@ -131,7 +131,10 @@ export function TestModule({ id, tests, isFinal = false }: TestModuleProps) {
             {isFinal && progressValue > 71 ? (
               <PDFDownloadLink
                 document={
-                  <CertificateDoc name="S.H.MURADOV" ball={progressValue} />
+                  <CertificateDoc
+                    name="S.H.MURADOV"
+                    ball={Math.round((testData.correct / testData.total) * 100)}
+                  />
                 }
               >
                 {({ blob, url, loading, error }) => {

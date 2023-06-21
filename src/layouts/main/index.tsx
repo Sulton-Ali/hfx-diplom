@@ -16,6 +16,7 @@ const Course = lazy(() => import("../../pages/course"));
 const Test = lazy(() => import("../../pages/test"));
 const Program = lazy(() => import("../../pages/program"));
 const Certificate = lazy(() => import("../../pages/test/ui/certificate"));
+const Ads = lazy(() => import("../../pages/ads"));
 
 function MainLayout() {
   return (
@@ -29,11 +30,12 @@ function MainLayout() {
         <Route path="normative" element={<NormativeBasis />} />
         <Route path="environment" element={<EnvironmentProtection />} />
         <Route path="labor-protection" element={<LaborProtection />} />
-        <Route path="teach-support" element={<TeachSupport />} />
+        <Route path="teach-support/*" element={<TeachSupport />} />
         <Route path="course/*" element={<Course />} />
         <Route path="test/*" element={<Test />} />
         <Route path="program" element={<Program />} />
         <Route path="certificate" element={<Certificate />} />
+        <Route path="ads" element={<Ads />} />
       </Routes>
       <Outlet />
     </AppShell>

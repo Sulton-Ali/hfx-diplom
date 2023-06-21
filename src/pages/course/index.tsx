@@ -11,10 +11,6 @@ import {
 import { PageTitle } from "../../components/page-title";
 import { IconBooks } from "@tabler/icons-react";
 import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
-import { LegalBasisActs } from "../legal-basis/components/legal-basis-acts";
-import { LegalBasisDocs } from "../legal-basis/components/legal-basis-docs";
-import { LegalBasisLaws } from "../legal-basis/components/legal-basis-laws";
-import { LegalBasisLawbooks } from "../legal-basis/components/legal-basis-lawsbooks";
 import CourseModule1 from "./ui/module-1";
 import CourseModule2 from "./ui/module-2";
 import CourseModule3 from "./ui/module-3";
