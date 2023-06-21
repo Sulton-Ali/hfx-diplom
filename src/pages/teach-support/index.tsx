@@ -55,7 +55,7 @@ export default function TeachSupport() {
     <Box>
       <Container size="lg">
         <Space h={60} />
-        <PageTitle>O'quv kursi</PageTitle>
+        <PageTitle>O'quv uslubiy yordam</PageTitle>
         <SegmentedControl
           fullWidth
           orientation="vertical"
