@@ -47,6 +47,8 @@ export function TestModule({ id, tests, isFinal = false }: TestModuleProps) {
     ((testData.current - 1) / testData.total) * 100
   );
 
+  const result = Math.round((testData.correct / testData.total) * 100);
+
   return (
     <Stack>
       {Number(currentTab) <= tests.length ? (
@@ -103,11 +105,7 @@ export function TestModule({ id, tests, isFinal = false }: TestModuleProps) {
               <Title order={2} align="center">
                 Natija
               </Title>
-              <Title order={1}>
-                {`${Math.round(
-                  (testData.correct / testData.total) * 100
-                )} Ball`}
-              </Title>
+              <Title order={1}>{`${result} Ball`}</Title>
             </Stack>
           </Group>
           <Space h={40} />
@@ -128,14 +126,9 @@ export function TestModule({ id, tests, isFinal = false }: TestModuleProps) {
                 Testlarga qaytish
               </Button>
             ) : null}
-            {isFinal && progressValue > 71 ? (
+            {isFinal && result > 71 ? (
               <PDFDownloadLink
-                document={
-                  <CertificateDoc
-                    name="S.H.MURADOV"
-                    ball={Math.round((testData.correct / testData.total) * 100)}
-                  />
-                }
+                document={<CertificateDoc name="S.H.MURADOV" ball={result} />}
               >
                 {({ blob, url, loading, error }) => {
                   return loading
@@ -143,7 +136,11 @@ export function TestModule({ id, tests, isFinal = false }: TestModuleProps) {
                     : "Sertifikat yuklab olish";
                 }}
               </PDFDownloadLink>
-            ) : null}
+            ) : (
+              <Title order={3} align="center">
+                Siz testdan o'ta olmadingiz!
+              </Title>
+            )}
           </Group>
         </Tabs.Panel>
       </Tabs>
